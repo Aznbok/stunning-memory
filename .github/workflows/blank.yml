@@ -43,9 +43,6 @@ jobs:
     env:
         NUM_JOBS: 60
         JOB: ${{ matrix.go }}
-    defaults:
-     run:
-       shell: wsl-bash -u root {0}
     steps:
     - name: Set up Go ${{ matrix.go }}
       uses: actions/setup-go@v1
